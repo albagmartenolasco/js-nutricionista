@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="funciones.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">       <!-- link a un documento style(para guardar el estilo de la pagina) -->
+    <link rel="formulario" type="text/css" href="formulario.php"> <!-- link a un documento php(para guardar datos del formulario) -->
+<title>JS NUTRICIONISTA</title>  <!-- Aquí va el contenido visible de tu página -->
+
+<header> <!-- Encabezado de la página, como logotipo y título -->
+      <img src="logo.png" alt="Mi Logotipo">      <!-- logo de la pagina) -->
+      <h1>              <!-- mi titulo -->
+        JS NUTRICIONISTA
+       </h1>
+       <a href="#formulario"><button>Registrarse</button></a>
+      
+       
+</head>
+<body>    
+
+
+</header>
+
+    <nav><!-- Menú de navegación -->
+        <body>
+            <div class="menu">
+                
+                <
+        <div class="icono" id="productos">
+                    <img src="prodcto.jpeg" alt="Productos">
+                    <div class="subMenu">
+                        <a href="#">Producto 1</a>
+                        <a href="#">Producto 2</a>
+                        <a href="#">Producto 3</a>
+                        <a href="#">Producto 4</a>
+                    </div>
+                </div>
+                <div class="icono" id="servicios">
+                    <img src="servicio.jpeg" alt="Servicios">
+                    <div class="subMenu">
+                        <a href="#">Servicio 1</a>
+                        <a href="#">Servicio 2</a>
+                        <a href="#">Servicio 3</a>
+                        
+                       
+        <a href="#">Servicio 4</a>
+                    </div>
+                </div>
+                <div class="icono" id="capacitacion">
+                    <img src="capacitacion.png" alt="Capacitación">
+                    <div class="subMenu">
+                        <a href="#">Capacitación 1</a>
+                        <a href="#">Capacitación 2</a>
+                        <a href="#">Capacitación 3</a>
+                        <a href="#">Capacitación 4</a>
+                    </div>
+                </div>
+            </div>
+            <script src="scripts.js"></script>
+        </body>
+ 
+    </nav>
+
+    <main><!--cuerpo de la pagina  -->
+
+        <section id="producto">
+            <h2>Producto</h2>
+            <p>Descripción detallada del Producto.</p>
+            <img src="prodcto.jpeg" alt="Imagen del Producto">
+           
+
+            
+        </section>
+        
+        <section id="servicio">
+            <h2>Servicio</h2>
+            <p>Descripción detallada del Servicio.</p>
+            <img src="servicio.jpeg" alt="Imagen del Servicio">
+        </section>
+        
+        <section id="capacitacion">
+            <h2>Capacitación</h2>
+            <p>Descripción detallada de la Capacitación.</p>
+            <img src="capacitacion.png" alt="Imagen de la Capacitación">
+        </section>
+    </main>
+
+    <aside> <!-- Contenido secundario, como formulario  -->
+        <p>formulario</p>
+        <form action="/procesar-formulario" method="post">
+
+            <label for="nombre">Nombre:</label>            
+            <input type="text" id="nombre" name="nombre" required>  
+            <br>
+            
+           <!-- dellallo el parrafo nombre -->
+           <!-- label :es una ETIQUETA para un elemento -->
+           <!-- for : PARA el elemento que querermos -->
+           <!-- NOMBRE : es el elemnto a gestionar -->
+
+           <!-- IMPUT TIPE :es el tipo de dato que se debe ingresar -->
+           <!-- id: identidad del dato -->
+           <!-- required :es  que el dato es obligatorio -->
+
+
+
+
+            <label for="apellido">Apellido:</label>                   <!-- lo que pide el formulario -->
+            <input type="text" id="apellido" name="apellido" required><!-- espacio donde respondere  -->
+            <br>
+            
+            <label for="correo">correo:</label>
+            <input type="text" id="correo" name="correo" required>  <!-- agregue correo para contacto no se encuentra en el wireframes   -->
+            <br>
+            
+            <label for="telefono">correo:</label>
+            <input type="number" id="telefono" name="telefono" required>  <!-- agregue telefono para contacto no se encuentra en el wireframes   -->
+            <br>
+           
+    <label for="peso">Peso (kg):</label>
+            
+           
+    <input type="number" id="peso" name="peso" step="0.01" required>
+            <br>
+            
+            <label for="estatura">Estatura (cm):</label>
+            <input type="number" id="estatura" name="estatura" required>
+            <br>
+            
+            <p>Tipo de Enfermedad:</p>   <!-- debo elegir una opcion-->
+            <label><input type="checkbox" name="enfermedad" value="diabetico">Diabético</label>
+            <label><input type="checkbox" name="enfermedad" value="celiaco">Celíaco</label>
+            <label><input type="checkbox" name="enfermedad" value="rosacea">Piel Rosácea</label>
+            <label><input type="checkbox" name="enfermedad" value="ningna">ninguna</label>      <!-- agregue ninguna enfermedad no esta en el wireframes -->
+            <br>
+            
+            <button type="submit">Enviar</button>   <!-- envio el pormulario (formulario.php) -->
+        
+       
+    </form>
+       
+    </aside>
+
+    <footer> <!-- Pie de página con las redes -->
+       
+       <div>
+        <a href="tel:+000000">Teléfono</a>
+       </div> 
+      <div>
+       <a href="https://wa.me/00000">WhatsApp</a>
+       </div>
+        
+       <div>
+         <a href="mailto:correo@ejemplo.com">Correo</a>
+       </div>  
+       
+        <div>
+         <a href="https://www.facebook.com/">Facebook</a>
+       </div>
+        <div>
+            <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+
+        <div>
+             <a href="https://twitter.com/">Twitter</a>
+     
+        </div>
+        
+       
+        
+<p>Derechos de autor © 2023. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
